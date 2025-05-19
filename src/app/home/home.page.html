@@ -7,14 +7,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-range id="rangeMonthOne" [ticks]="true" [snaps]="false" [min]="0" [max]="40"
+    (ionChange)="onValueMonthOne($event)"></ion-range>
+  <p>{{ months.one }}</p>
+  <ion-range id="rangeMonthTwo" [ticks]="true" [snaps]="false" [min]="0" [max]="40"
+    (ionChange)="onValueMonthTwo($event)"></ion-range>
+  <p>{{ months.two }}</p>
+  <ion-range id="rangeMonthThree" [ticks]="true" [snaps]="false" [min]="0" [max]="40"
+    (ionChange)="onValueMonthThree($event)"></ion-range>
+  <p>{{ months.three }}</p>
+  <ion-range id="rangeMonthFour" [ticks]="true" [snaps]="false" [min]="0" [max]="40"
+    (ionChange)="onValueMonthFour($event)"></ion-range>
+  <p>{{ months.four }}</p>
+  <ion-button color="light" (click)="toResultPage()">Calcular</ion-button>
 </ion-content>
