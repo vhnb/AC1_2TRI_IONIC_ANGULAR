@@ -1,0 +1,18 @@
+.contentMain {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contentMain .cardFruit {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+}

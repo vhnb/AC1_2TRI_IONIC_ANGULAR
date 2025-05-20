@@ -1,1 +1,21 @@
-<header>teste</header>
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Plantas adequadas
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="contentMain" *ngIf="suitableFruits.length > 0; else noFruits">
+        <div>
+            <h1>{{months.one}}</h1>
+        </div>
+        <article class="cardFruit" *ngFor="let fruit of suitableFruits">
+            {{ fruit.name }}
+        </article>
+    </div>
+    <ng-template #noFruits>
+        <p>Nenhuma fruta é adequada para essa média de temperatura.</p>
+    </ng-template>
+</ion-content>
