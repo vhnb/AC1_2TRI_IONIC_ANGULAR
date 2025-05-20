@@ -14,6 +14,11 @@
   width: 100%;
 }
 
+.contentMain ion-button {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
 .contentMain .containerMonthRange {
   display: flex;
   align-items: start;
@@ -40,17 +45,51 @@
 }
 
 .contentMain .containerMonthRange .contentInfoMonth h1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   margin-top: 0px;
   margin-bottom: 5px;
   font-size: 20px;
 }
 
+.contentMain .containerMonthRange .contentInfoMonth h1 ion-icon {
+  margin-right: 8px;
+}
+
 .contentMain .containerMonthRange .contentInfoMonth p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   margin-bottom: 0px;
   color: #b4b4b4;
 }
 
+.contentMain .containerMonthRange .contentInfoMonth p ion-icon {
+  margin-right: 8px;
+}
+
 .contentMain .containerMonthRange .contentInfoMonth p span {
-  color: rgb(21, 117, 243);
+  margin-left: 5px;
+  color: rgb(53, 140, 255);
   font-weight: bold;
+}
+
+.contentMain .containerMonthRange .footerMonthRange {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contentMain .containerMonthRange .footerMonthRange .minLabel {
+  margin-right: 12px;
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+.contentMain .containerMonthRange .footerMonthRange .maxLabel {
+  margin-left: 12px;
+  color: #bdbdbd;
+  font-size: 13px;
 }

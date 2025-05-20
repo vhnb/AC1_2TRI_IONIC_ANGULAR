@@ -10,36 +10,52 @@
   <div class="contentMain">
     <div class="containerMonthRange">
       <div class="contentInfoMonth">
-        <h1>Primeiro mês</h1>
-        <p>Temperatura: <span>{{ months.one }}ºC</span></p>
+        <h1><ion-icon name="calendar-outline"></ion-icon> Primeiro mês</h1>
+        <p><ion-icon name="thermometer-outline"></ion-icon> Temperatura: <span>{{ months.one }}ºC</span></p>
       </div>
-      <ion-range id="rangeMonthOne" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
-        (ionChange)="onValueMonthOne($event)"></ion-range>
+      <div class="footerMonthRange">
+        <span class="minLabel">0ºC</span>
+        <ion-range id="rangeMonthOne" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
+          (ionChange)="onValueMonthOne($event)"></ion-range>
+        <span class="maxLabel">40ºC</span>
+      </div>
     </div>
     <div class="containerMonthRange">
       <div class="contentInfoMonth">
-        <h1>Segundo mês</h1>
-        <p>Temperatura: <span>{{ months.two }}ºC</span></p>
+        <h1><ion-icon name="calendar-outline"></ion-icon> Segundo mês</h1>
+        <p><ion-icon name="thermometer-outline"></ion-icon> Temperatura: <span>{{ months.two }}ºC</span></p>
       </div>
-      <ion-range id="rangeMonthTwo" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
-        (ionChange)="onValueMonthTwo($event)"></ion-range>
+      <div class="footerMonthRange">
+        <span class="minLabel">0ºC</span>
+        <ion-range id="rangeMonthTwo" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
+          (ionChange)="onValueMonthTwo($event)"></ion-range>
+        <span class="maxLabel">40ºC</span>
+      </div>
     </div>
     <div class="containerMonthRange">
       <div class="contentInfoMonth">
-        <h1>Terceiro mês</h1>
-        <p>Temperatura: <span>{{ months.three }}ºC</span></p>
+        <h1><ion-icon name="calendar-outline"></ion-icon> Terceiro mês</h1>
+        <p><ion-icon name="thermometer-outline"></ion-icon> Temperatura: <span>{{ months.three }}ºC</span></p>
       </div>
-      <ion-range id="rangeMonthThree" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
-        (ionChange)="onValueMonthThree($event)"></ion-range>
+      <div class="footerMonthRange">
+        <span class="minLabel">0ºC</span>
+        <ion-range id="rangeMonthThree" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
+          (ionChange)="onValueMonthThree($event)"></ion-range>
+        <span class="maxLabel">40ºC</span>
+      </div>
     </div>
     <div class="containerMonthRange">
       <div class="contentInfoMonth">
-        <h1>Quarto mês</h1>
-        <p>Temperatura: <span>{{ months.four }}ºC</span></p>
+        <h1><ion-icon name="calendar-outline"></ion-icon> Quarto mês</h1>
+        <p><ion-icon name="thermometer-outline"></ion-icon> Temperatura: <span>{{ months.four }}ºC</span></p>
       </div>
-      <ion-range id="rangeMonthFour" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
-        (ionChange)="onValueMonthFour($event)"></ion-range>
+      <div class="footerMonthRange">
+        <span class="minLabel">0ºC</span>
+        <ion-range id="rangeMonthFour" [ticks]="true" [snaps]="false" [value]="20" [min]="0" [max]="40"
+          (ionChange)="onValueMonthFour($event)"></ion-range>
+        <span class="maxLabel">40ºC</span>
+      </div>
     </div>
-    <ion-button color="light" (click)="toResultPage()">Calcular</ion-button>
+    <ion-button color="light" (click)="toResultPage()">Conferir</ion-button>
   </div>
 </ion-content>

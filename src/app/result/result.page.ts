@@ -51,4 +51,8 @@ export class ResultPage implements OnInit {
     this.suitableFruits = this.fruits.filter(fruit => average >= fruit.min && average <= fruit.max)
   }
 
+  toHomePage() {
+    this.router.navigateByUrl('/')
+  }
+
 }

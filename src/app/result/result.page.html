@@ -1,21 +1,91 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
         <ion-title>
-            Plantas adequadas
+            Frutas adequadas
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
     <div class="contentMain" *ngIf="suitableFruits.length > 0; else noFruits">
-        <div>
-            <h1>{{months.one}}</h1>
+        <ion-button color="light" (click)="toHomePage()"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+        <div class="contentInfoMonths">
+            <article class="cardInfoMonth">
+                <div class="contentHeaderCardInfoMonth">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p>1</p>
+                </div>
+                <span>{{ months.one }}ºC</span>
+            </article>
+            <article class="cardInfoMonth">
+                <div class="contentHeaderCardInfoMonth">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p>2</p>
+                </div>
+                <span>{{ months.two }}ºC</span>
+            </article>
+            <article class="cardInfoMonth">
+                <div class="contentHeaderCardInfoMonth">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p>3</p>
+                </div>
+                <span>{{ months.three }}ºC</span>
+            </article>
+            <article class="cardInfoMonth">
+                <div class="contentHeaderCardInfoMonth">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p>4</p>
+                </div>
+                <span>{{ months.four }}ºC</span>
+            </article>
         </div>
+        <p>Frutas adequadas para o plantio:</p>
         <article class="cardFruit" *ngFor="let fruit of suitableFruits">
-            {{ fruit.name }}
+            <div class="headerInfoFruit">
+                <h1>{{ fruit.name }}</h1>
+                <ion-icon name="nutrition-outline"></ion-icon>
+            </div>
+            <div class="bodyInfoFruit">
+                <p><ion-icon name="thermometer-outline"></ion-icon> Min: {{ fruit.min }}ºC</p>
+                <p><ion-icon name="thermometer-outline"></ion-icon> Max: {{ fruit.max }}ºC</p>
+            </div>
         </article>
     </div>
     <ng-template #noFruits>
-        <p>Nenhuma fruta é adequada para essa média de temperatura.</p>
+        <div class="contentNoFruit">
+            <ion-button color="light" (click)="toHomePage()"><ion-icon
+                    name="arrow-back-outline"></ion-icon></ion-button>
+            <div class="contentInfoMonths">
+                <article class="cardInfoMonth">
+                    <div class="contentHeaderCardInfoMonth">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>1</p>
+                    </div>
+                    <span>{{ months.one }}ºC</span>
+                </article>
+                <article class="cardInfoMonth">
+                    <div class="contentHeaderCardInfoMonth">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>2</p>
+                    </div>
+                    <span>{{ months.two }}ºC</span>
+                </article>
+                <article class="cardInfoMonth">
+                    <div class="contentHeaderCardInfoMonth">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>3</p>
+                    </div>
+                    <span>{{ months.three }}ºC</span>
+                </article>
+                <article class="cardInfoMonth">
+                    <div class="contentHeaderCardInfoMonth">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <p>4</p>
+                    </div>
+                    <span>{{ months.four }}ºC</span>
+                </article>
+            </div>
+            <p>Nenhuma fruta é adequada para essa média de temperatura.</p>
+        </div>
     </ng-template>
 </ion-content>

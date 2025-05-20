@@ -6,13 +6,108 @@
     padding: 15px;
 }
 
-.contentMain .cardFruit {
+ion-button {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contentInfoMonths {
     display: flex;
     align-items: center;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.cardInfoMonth {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e3e3e327;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+}
+
+.cardInfoMonth p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #b4b4b4;
+}
+
+.cardInfoMonth span {
+    color: rgb(53, 140, 255);
+    font-size: 22px;
+}
+
+.cardInfoMonth ion-icon {
+    color: #b4b4b4;
+}
+
+.cardInfoMonth .contentHeaderCardInfoMonth {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contentMain .cardFruit {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: #1f1f1f;
+}
+
+.contentMain .cardFruit .headerInfoFruit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e327;
+}
+
+.contentMain .cardFruit .headerInfoFruit h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contentMain .cardFruit .headerInfoFruit ion-icon {
+    margin-bottom: 10px;
+}
+
+.contentMain .cardFruit .bodyInfoFruit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentMain .cardFruit .bodyInfoFruit p {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.contentMain .cardFruit .bodyInfoFruit p ion-icon {
+    color: rgb(53, 140, 255);
+}
+
+.contentNoFruit {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
 }
